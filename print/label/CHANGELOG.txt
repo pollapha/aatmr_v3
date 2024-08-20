@@ -1,0 +1,46 @@
+Class 		:	Label
+Auteur		:	Ludovic RIAUDEL
+Copyright	:	Ludovic RIAUDEL - <http://madvic.net/>
+Site web	:	<http://cab.madvic.net/> <http://kiwi.madvic.net/>
+
+Description	:	Classe héritant de TCPDF permettant à partir d'un fichier de configuration d'imprimer des étiquettes.
+
+Version 1.15  : 13/01/2014
+* Ajout README + LICENSE
+* Amélioration des exemples et création d'un fichier index.php présentant les exemples.
+
+Version 1.13	:	16/11/2013
+* Mise à jour vers php 5.3
+
+Version 1.10	:	02/09/2010 - Ajout
+* Ajout de la méthode privée exitLabel() qui permet l'affichage des erreurs et une fin sans erreur php.
+* Passage de la classe en abstraite
+* Ajout d'un test sur le paramètre $label_id, (si le paramètre est défini ou non).
+* Modification de la classe pour l'adapter à la version 5 de TCPDF (probleme de largeur et hauteur de page).
+
+Version 1.05	:	29/11/2009 - Modification
+* Modification de l'appel à la classe , passage d'un paramètre pour le fichier de configuration des étiquettes (labels.xml).
+
+Version 1.04	:	25/09/2009 - Correction
+* Correction pour l'ajout d'un decalage (valeur NULL plutot que '' afin que le test fonctionne et que le décor ne s'affiche pas)
+* Divers correction pour le bon fonctionnement de la prise en charge de la couleur des bordures.
+
+Version 1.03	:	03/08/2009 - Ajout
+* Modification de la classe, prise en compte du paramètre 'orientation', ainsi que 'bordercolor' (codage html ex : #AD8DF7) et 'borderwidth' dans le fichier de configuration labels.xml.
+
+Version 1.02	:	13/05/2009 - Mise à jour
+* Problème de test sur des variables de type float dans la classe label
+
+Version 1.01	:	27/02/2009 - Correction
+* Correctif : Le décalage ne s'imprime pas.
+* Ajout d'un paramètre border, afin de pouvoir imprimer les bordures desétiquettes.
+
+Version 1.00	:	01/02/2009 - Refonte complète du projet
+* Application de la classe TCPDF pour la génération des PDF
+
+
+
+
+
+
+

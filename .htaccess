@@ -1,0 +1,8 @@
+Options +FollowSymLinks -Indexes -MultiViews
+RewriteEngine On
+RewriteBase /aatmr_v3
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+php_value session.gc_maxlifetime 31557600
+php_value memory_limit 128M

@@ -1,0 +1,52 @@
+ISA*00*          *00*          *02*TTVT           *02*PSKL           *{Ymd}*{Hi}*U*00400*{edi_header1}*0*T*;
+GS*QM*TTVT*PSKL*{Ymd}*{Hi}*{edi_header1*1}*X*004010~
+ST*214*{edi_header2}0001
+
+SE*{numLine}*{edi_header2}0001
+GE*1*{edi_header1*1}
+IEA*1*{edi_header1}
+
+X3 เข้า supplier
+
+B10*{bol}*{bol}*TTVT
+L11*{routeNo}*RN
+LX*1AT7*X3*NS***{Ymd}*{Hi}*ET
+MS1*{supplierGeographic}*{shortJD}
+MS2*TTVT*{truckLicense}*TL
+L11*{s5_seq}*QN
+L11*{l11_2i}*21
+
+AF ออก supplier
+
+B10*{bol}*{bol}*TTVT
+L11*{routeNo}*RN
+LX*1AT7*AF*NS***{Ymd}*{Hi}*ET
+MS1*{supplierGeographic}*{shortJD}
+MS2*TTVT*{truckLicense}*TL
+L11*{bol}*BM
+L11*{orderID}*IT
+L11*{s5_seq}*QN
+L11*{l11_2i}*21
+
+
+X1 เข้า aat
+
+B10*{bol}*{bol}*TTVT
+L11*{routeNo}*RN
+LX*1AT7*X1*NS***{Ymd}*{Hi}*ET
+MS1*{supplierGeographic}*{shortJD}
+MS2*TTVT*{truckLicense}*TL
+L11*{s5_seq}*QN
+L11*{l11_2i}*21
+
+D1 ออก aat
+
+B10*{bol}*{bol}*TTVT
+L11*{routeNo}*RN
+LX*1AT7*D1*NS***{Ymd}*{Hi}*ET
+MS1*{supplierGeographic}*{shortJD}
+MS2*TTVT*{truckLicense}*TL
+L11*{bol}*BM
+L11*{orderID}*IT
+L11*{s5_seq}*QN
+L11*{l11_2i}*21
